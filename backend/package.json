@@ -1,0 +1,35 @@
+{
+  "name": "jeevan-portfolio-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/index.js",
+    "start": "node src/index.js",
+    "create-admin": "node src/scripts/createAdmin.js"
+  },
+  "keywords": [
+    "portfolio",
+    "backend",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "Jeevan Dangi",
+  "license": "MIT",
+  "description": "Backend API for Jeevan Dangi's Portfolio Website",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cookies-parser": "^1.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.4",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
