@@ -5,9 +5,9 @@ import cookieParser from "cookie-parser";
 import apiRoutes from './routes/index.js';
 
 // Load environment variables
-dotenv.config({ path: "./.env" });
 
 const app = express();
+dotenv.config({ path: "./.env" });
 
 // CORS configuration
 app.use(cors({

@@ -4,11 +4,13 @@ import { ApiResponse } from '../utils/ApiResponse.js';
 import { ApiError } from '../utils/ApiError.js';
 import { deleteFile, getFileUrl } from '../middlewares/upload.js';
 import path from 'path';
+import { log } from 'console';
 
 // @desc    Get active profile
 // @route   GET /api/profile
 // @access  Public
 const getProfile = asyncHandler(async (req, res) => {
+  console.log("hello")
   const profile = await Profile.getActiveProfile();
 
   if (!profile) {

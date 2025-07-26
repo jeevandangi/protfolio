@@ -16,6 +16,8 @@ const Hero = () => {
     const fetchProfileData = async () => {
       try {
         const response = await apiResponseHandler('/profile');
+        console.log(response);
+
         if (response?.data?.success) {
           setProfileData(response.data.data);
         } else {
