@@ -40,7 +40,7 @@ const apiResponseHandler = async (endPoint, method = 'GET', data = null, customH
             if (endPoint !== '/auth/refresh' && endPoint !== '/auth/admin/login') {
                 try {
                     const refreshResponse = await axios.post(
-                        "http://localhost:8000/api/auth/refresh",
+                        "https://protfolio-lnex.onrender.com/api/auth/refresh",
                         {},
                         { withCredentials: true }
                     );
@@ -56,7 +56,7 @@ const apiResponseHandler = async (endPoint, method = 'GET', data = null, customH
                         };
 
                         const retryResponse = await axios({
-                            url: "http://localhost:8000/api" + endPoint,
+                            url: "https://protfolio-lnex.onrender.com/api" + endPoint,
                             method: method,
                             data: data,
                             headers: retryHeaders,
