@@ -5,7 +5,7 @@ axios.defaults.withCredentials = true;
 
 const apiResponseHandler = async (endPoint, method = 'GET', data = null, customHeaders = {}) => {
     try {
-        const baseURL = "https://protfolio-lnex.onrender.com";
+        const baseURL = "https://protfolio-lnex.onrender.com/api";
 
         // Default headers (don't set Content-Type for FormData)
         const defaultHeaders = {
